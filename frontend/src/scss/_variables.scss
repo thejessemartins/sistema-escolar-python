@@ -1,33 +1,25 @@
 // Bootstrap variables
 
 $font-family-sans-serif: "Lunema", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
-$body-color: #000000 !default;
+$body-color: #1C1E1C !default; // Eerie Black
 
-$primary: #6663fd !default; // Cornflower
-$secondary: #4a4a4a !default;
-$success: #8bb800 !default; // Adjusted Bright Green for better text contrast if used as text, or keep original if bg. using a slightly darker version for text readability.
-// Actually, let's stick to the palette but be careful.
-// If success is used for text, #cfff5e is unreadable. Let's use it for bg and black text. 
-// For now, I will use a darker green for standard success text, but the palette one for accents.
-// Let's stick to the requested palette strictly where possible.
+$primary: #7AF17A !default; // Screamin Green
+$secondary: #1C1E1C !default; // Eerie Black
+$success: #7AF17A !default; // Screamin Green
+$info: #1C1E1C !default; // Eerie Black
+$warning: #ffb74d !default;
+$danger: #ff5252 !default;
+$light: #E6F4E9 !default; // Honeydew
+$dark: #1C1E1C !default; // Eerie Black
 
-$primary: #6663fd !default;
-$secondary: #333333 !default;
-$success: #cfff5e !default; // Bright Green
-$info: #6663fd !default; // Cornflower
-$warning: #ffb74d !default; // Matching warm tone
-$danger: #ff5252 !default; // Standard danger
-$light: #fdf7e7 !default; // Cream
-$dark: #000000 !default; // Black
-
-$border-radius: 8px !default; // Softer corners
+$border-radius: 12px !default; // Further softening for a modern look
 
 // Spur variables
-$logo-color: #6663fd !default; // Cornflower
-$toolbar-bg: #ffffff !default; // White, to stand out slightly from Cream bg
+$logo-color: #7AF17A !default; // Screamin Green
+$toolbar-bg: #FFFFFF !default; // White
 
-$dash-nav-dark-color: #fdf7e7 !default; // Cream text on dark nav
-$dash-nav-dark-hover-bg: rgba(#6663fd, 0.15) !default; // Cornflower tint
-$dash-nav-dark-bg: #000000 !default; // Black sidebar
+$dash-nav-dark-color: #FFFFFF !default;
+$dash-nav-dark-hover-bg: rgba(#7AF17A, 0.15) !default; // Screamin Green tint
+$dash-nav-dark-bg: #1C1E1C !default; // Eerie Black
 
 $searchbox-input-placeholder: #8b8b8b !default;
