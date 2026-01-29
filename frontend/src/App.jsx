@@ -65,6 +65,13 @@ function App() {
             <Route path="annual-balance-report" element={<ComingSoon title="Rel Balanço Anual" />} />
             <Route path="defaulters-report" element={<ComingSoon title="Rel Inadimplentes" />} />
 
+            {/* Other Routes */}
+            <Route path="generate-contracts" element={<ComingSoon title="Gerar Contratos" />} />
+            <Route path="cash-registers" element={<ComingSoon title="Caixas" />} />
+            <Route path="tasks-agenda" element={<ComingSoon title="Tarefas / Agenda" />} />
+            <Route path="notes" element={<ComingSoon title="Anotações" />} />
+            <Route path="site-data" element={<ComingSoon title="Dados do Site" />} />
+
             <Route path="settings" element={<Settings />} />
           </Route>
         </Routes>

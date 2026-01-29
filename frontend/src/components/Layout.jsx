@@ -148,6 +148,26 @@ const Layout = () => {
             </div>
           </div>
 
+          <Link to="/dashboard/generate-contracts" className="dash-nav-item" style={{ textDecoration: 'none' }}>
+            <i className="bi bi-file-earmark-pdf"></i> Gerar Contratos
+          </Link>
+
+          <Link to="/dashboard/cash-registers" className="dash-nav-item" style={{ textDecoration: 'none' }}>
+            <i className="bi bi-briefcase"></i> Caixas <span className="text-danger ml-2" style={{ fontSize: '0.8em', marginLeft: '5px' }}>(Fechado)</span>
+          </Link>
+
+          <Link to="/dashboard/tasks-agenda" className="dash-nav-item" style={{ textDecoration: 'none' }}>
+            <i className="bi bi-calendar-event"></i> Tarefas / Agenda
+          </Link>
+
+          <Link to="/dashboard/notes" className="dash-nav-item" style={{ textDecoration: 'none' }}>
+            <i className="bi bi-journal-text"></i> Anotações
+          </Link>
+
+          <Link to="/dashboard/site-data" className="dash-nav-item" style={{ textDecoration: 'none' }}>
+            <i className="bi bi-globe"></i> Dados do Site
+          </Link>
+
 
 
         </nav>
