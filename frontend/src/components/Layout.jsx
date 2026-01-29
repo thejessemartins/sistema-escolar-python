@@ -70,7 +70,7 @@ const Layout = () => {
             <i className="bi bi-list"></i>
           </a>
           <Link to="/dashboard" className="spur-logo" style={{ textDecoration: 'none' }}>
-            <i class="bi bi-fullscreen text-white"></i> <span style={{ textDecoration: 'none' }}>{appName}</span>
+            <i class="bi bi-person-video3 text-white"></i> <span style={{ textDecoration: 'none' }}>{appName}</span>
           </Link>
         </header>
         <nav className="dash-nav-list">
