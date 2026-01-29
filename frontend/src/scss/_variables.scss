@@ -1,25 +1,33 @@
 // Bootstrap variables
 
 $font-family-sans-serif: "Lunema", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
-$body-color: #424242 !default;
+$body-color: #000000 !default;
 
-$primary: #333333 !default;
-$secondary: #757575 !default;
-$success: #1DAB47 !default;
-$info: #8A3FFC !default;
-$warning: #FCAE3F !default;
-$danger: #FC413F !default;
-$light: #f8f9fa !default;
-$dark: #212529 !default;
+$primary: #6663fd !default; // Cornflower
+$secondary: #4a4a4a !default;
+$success: #8bb800 !default; // Adjusted Bright Green for better text contrast if used as text, or keep original if bg. using a slightly darker version for text readability.
+// Actually, let's stick to the palette but be careful.
+// If success is used for text, #cfff5e is unreadable. Let's use it for bg and black text. 
+// For now, I will use a darker green for standard success text, but the palette one for accents.
+// Let's stick to the requested palette strictly where possible.
 
-$border-radius: 0 !default;
+$primary: #6663fd !default;
+$secondary: #333333 !default;
+$success: #cfff5e !default; // Bright Green
+$info: #6663fd !default; // Cornflower
+$warning: #ffb74d !default; // Matching warm tone
+$danger: #ff5252 !default; // Standard danger
+$light: #fdf7e7 !default; // Cream
+$dark: #000000 !default; // Black
+
+$border-radius: 8px !default; // Softer corners
 
 // Spur variables
-$logo-color: #333333 !default;
-$toolbar-bg: #FFFFFF !default;
+$logo-color: #6663fd !default; // Cornflower
+$toolbar-bg: #ffffff !default; // White, to stand out slightly from Cream bg
 
-$dash-nav-dark-color: #fff !default;
-$dash-nav-dark-hover-bg: rgba(#fff, .1) !default;
-$dash-nav-dark-bg: #333333 !default;
+$dash-nav-dark-color: #fdf7e7 !default; // Cream text on dark nav
+$dash-nav-dark-hover-bg: rgba(#6663fd, 0.15) !default; // Cornflower tint
+$dash-nav-dark-bg: #000000 !default; // Black sidebar
 
 $searchbox-input-placeholder: #8b8b8b !default;
