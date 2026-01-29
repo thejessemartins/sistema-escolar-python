@@ -43,6 +43,28 @@ function App() {
             <Route path="access-groups" element={<ComingSoon title="Grupos de Acessos" />} />
             <Route path="access" element={<ComingSoon title="Acessos" />} />
 
+            {/* Turmas / Disciplinas Routes */}
+            <Route path="classes" element={<ComingSoon title="Turmas" />} />
+            <Route path="enrollments" element={<ComingSoon title="Lista de Matrículas" />} />
+            <Route path="subjects" element={<ComingSoon title="Disciplinas" />} />
+            <Route path="courses" element={<ComingSoon title="Cursos" />} />
+            <Route path="school-years" element={<ComingSoon title="Ano Letivo" />} />
+            <Route path="shifts" element={<ComingSoon title="Turnos" />} />
+            <Route path="occurrences" element={<ComingSoon title="Ocorrências" />} />
+            <Route path="document-requests" element={<ComingSoon title="Solicitações Documentos" />} />
+            <Route path="class-reports" element={<ComingSoon title="Relatório de Aulas" />} />
+
+            {/* Financeiro Routes */}
+            <Route path="accounts-payable" element={<ComingSoon title="Contas a Pagar" />} />
+            <Route path="accounts-receivable" element={<ComingSoon title="Contas a Receber" />} />
+
+            {/* Rel Financeiro Routes */}
+            <Route path="financial-report" element={<ComingSoon title="Relatório Financeiro" />} />
+            <Route path="expense-synthetic-report" element={<ComingSoon title="Rel Sintético Despesas" />} />
+            <Route path="income-synthetic-report" element={<ComingSoon title="Rel Sintético Receber" />} />
+            <Route path="annual-balance-report" element={<ComingSoon title="Rel Balanço Anual" />} />
+            <Route path="defaulters-report" element={<ComingSoon title="Rel Inadimplentes" />} />
+
             <Route path="settings" element={<Settings />} />
           </Route>
         </Routes>
