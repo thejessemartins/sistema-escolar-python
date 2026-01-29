@@ -9,6 +9,7 @@ const Layout = () => {
   const [isMobileShow, setIsMobileShow] = useState(false);
   const [isProfileOpen, setIsProfileOpen] = useState(false);
   const [isPessoasOpen, setIsPessoasOpen] = useState(false);
+  const [isCadastrosOpen, setIsCadastrosOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -34,6 +35,11 @@ const Layout = () => {
   const togglePessoas = (e) => {
     e.preventDefault();
     setIsPessoasOpen(!isPessoasOpen);
+  };
+
+  const toggleCadastros = (e) => {
+    e.preventDefault();
+    setIsCadastrosOpen(!isCadastrosOpen);
   };
 
 
@@ -66,6 +72,21 @@ const Layout = () => {
               <Link to="/dashboard/professionals" className="dash-nav-dropdown-item" style={{ textDecoration: 'none' }}>Profissionais</Link>
               <Link to="/dashboard/suppliers" className="dash-nav-dropdown-item" style={{ textDecoration: 'none' }}>Fornecedores</Link>
               <Link to="/dashboard/birthdays" className="dash-nav-dropdown-item" style={{ textDecoration: 'none' }}>Aniversariantes</Link>
+            </div>
+          </div>
+
+          <div className={`dash-nav-dropdown ${isCadastrosOpen ? 'show' : ''}`}>
+            <a href="#!" className="dash-nav-item dash-nav-dropdown-toggle" onClick={toggleCadastros} style={{ textDecoration: 'none' }}>
+              <i className="bi bi-save"></i> Cadastros
+            </a>
+            <div className={`dash-nav-dropdown-menu ${isCadastrosOpen ? 'show' : ''}`}>
+              <Link to="/dashboard/payment-methods" className="dash-nav-dropdown-item" style={{ textDecoration: 'none' }}>Formas Pgto</Link>
+              <Link to="/dashboard/frequencies" className="dash-nav-dropdown-item" style={{ textDecoration: 'none' }}>Frequências</Link>
+              <Link to="/dashboard/document-types" className="dash-nav-dropdown-item" style={{ textDecoration: 'none' }}>Tipo Documentos</Link>
+              <Link to="/dashboard/contract-models" className="dash-nav-dropdown-item" style={{ textDecoration: 'none' }}>Modelos Contratos</Link>
+              <Link to="/dashboard/roles" className="dash-nav-dropdown-item" style={{ textDecoration: 'none' }}>Cargos</Link>
+              <Link to="/dashboard/access-groups" className="dash-nav-dropdown-item" style={{ textDecoration: 'none' }}>Grupos de Acessos</Link>
+              <Link to="/dashboard/access" className="dash-nav-dropdown-item" style={{ textDecoration: 'none' }}>Acessos</Link>
             </div>
           </div>
 

@@ -34,6 +34,15 @@ function App() {
             <Route path="suppliers" element={<ComingSoon title="Fornecedores" />} />
             <Route path="birthdays" element={<ComingSoon title="Aniversariantes" />} />
 
+            {/* Cadastros Routes */}
+            <Route path="payment-methods" element={<ComingSoon title="Formas Pgto" />} />
+            <Route path="frequencies" element={<ComingSoon title="Frequências" />} />
+            <Route path="document-types" element={<ComingSoon title="Tipo Documentos" />} />
+            <Route path="contract-models" element={<ComingSoon title="Modelos Contratos" />} />
+            <Route path="roles" element={<ComingSoon title="Cargos" />} />
+            <Route path="access-groups" element={<ComingSoon title="Grupos de Acessos" />} />
+            <Route path="access" element={<ComingSoon title="Acessos" />} />
+
             <Route path="settings" element={<Settings />} />
           </Route>
         </Routes>
