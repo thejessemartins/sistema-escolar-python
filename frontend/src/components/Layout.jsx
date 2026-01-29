@@ -8,7 +8,7 @@ const Layout = () => {
   const [isCompact, setIsCompact] = useState(false);
   const [isMobileShow, setIsMobileShow] = useState(false);
   const [isProfileOpen, setIsProfileOpen] = useState(false);
-  const [isUsersOpen, setIsUsersOpen] = useState(false);
+  const [isPessoasOpen, setIsPessoasOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -31,9 +31,9 @@ const Layout = () => {
     setIsProfileOpen(!isProfileOpen);
   };
 
-  const toggleUsers = (e) => {
+  const togglePessoas = (e) => {
     e.preventDefault();
-    setIsUsersOpen(!isUsersOpen);
+    setIsPessoasOpen(!isPessoasOpen);
   };
 
 
@@ -55,13 +55,17 @@ const Layout = () => {
             <i className="bi bi-grid-1x2"></i> Painel
           </Link>
 
-          <div className={`dash-nav-dropdown ${isUsersOpen ? 'show' : ''}`}>
-            <a href="#!" className="dash-nav-item dash-nav-dropdown-toggle" onClick={toggleUsers} style={{ textDecoration: 'none' }}>
-              <i className="bi bi-people"></i> Usuários
+          <div className={`dash-nav-dropdown ${isPessoasOpen ? 'show' : ''}`}>
+            <a href="#!" className="dash-nav-item dash-nav-dropdown-toggle" onClick={togglePessoas} style={{ textDecoration: 'none' }}>
+              <i className="bi bi-people"></i> Pessoas
             </a>
-            <div className={`dash-nav-dropdown-menu ${isUsersOpen ? 'show' : ''}`}>
-              <Link to="/dashboard/users/create" className="dash-nav-dropdown-item" style={{ textDecoration: 'none' }}>Criar Usuário</Link>
-              <Link to="/dashboard/users" className="dash-nav-dropdown-item" style={{ textDecoration: 'none' }}>Visualizar Usuários</Link>
+            <div className={`dash-nav-dropdown-menu ${isPessoasOpen ? 'show' : ''}`}>
+              <Link to="/dashboard/students" className="dash-nav-dropdown-item" style={{ textDecoration: 'none' }}>Alunos</Link>
+              <Link to="/dashboard/teachers" className="dash-nav-dropdown-item" style={{ textDecoration: 'none' }}>Professores</Link>
+              <Link to="/dashboard/users" className="dash-nav-dropdown-item" style={{ textDecoration: 'none' }}>Usuários</Link>
+              <Link to="/dashboard/professionals" className="dash-nav-dropdown-item" style={{ textDecoration: 'none' }}>Profissionais</Link>
+              <Link to="/dashboard/suppliers" className="dash-nav-dropdown-item" style={{ textDecoration: 'none' }}>Fornecedores</Link>
+              <Link to="/dashboard/birthdays" className="dash-nav-dropdown-item" style={{ textDecoration: 'none' }}>Aniversariantes</Link>
             </div>
           </div>
 

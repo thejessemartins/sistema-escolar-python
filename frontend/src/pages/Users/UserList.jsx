@@ -36,10 +36,17 @@ const UserList = () => {
             <div className="col-12">
                 <Card className="spur-card">
                     <CardHeader>
-                        <div className="spur-card-icon">
-                            <i className="bi bi-people"></i>
+                        <div className="d-flex align-items-center justify-content-between w-100">
+                            <div className="d-flex align-items-center">
+                                <div className="spur-card-icon">
+                                    <i className="bi bi-people"></i>
+                                </div>
+                                <div className="spur-card-title">Usuários Cadastrados</div>
+                            </div>
+                            <button className="btn btn-primary btn-sm" onClick={() => navigate('/dashboard/users/create')}>
+                                <i className="bi bi-plus-lg"></i> Novo Usuário
+                            </button>
                         </div>
-                        <div className="spur-card-title">Usuários Cadastrados</div>
                     </CardHeader>
                     <CardBody>
                         <table className="table table-hover table-in-card">
